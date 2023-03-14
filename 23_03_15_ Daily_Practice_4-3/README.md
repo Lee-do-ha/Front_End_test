@@ -12,6 +12,3 @@
 기능 -> localStorage에 담겨있는 답변이 있을 시 읽어와서 화면에 추가하고 메인화면에 추가
 #### register.html -> 회원등록을 하기위한 화면
 -> 모든 항목 입력시 아이디, 비밀번호 localStorage에 등록<br/>
-
-
-[Nothin Link] (https://www.notion.so/JSON-WebStorage-57f35e4009a0433dae412d358212c515?pvs=4)
