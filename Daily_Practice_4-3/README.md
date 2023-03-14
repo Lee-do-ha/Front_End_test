@@ -1,7 +1,7 @@
 # 2023 / 03 / 14
 
 
-## JSON과 이벤트 처리 관련 학습
+## 이벤트 처리와 JSON, WebStorage 관련 학습
 
 ## HTML 파일
 #### main.html -> 가장 첫 메인화면
