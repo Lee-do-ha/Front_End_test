@@ -1,4 +1,4 @@
-# Front_end_test
+# Front_end
 
 ## Notion 학습기록
 ### [Web과 HTML]
