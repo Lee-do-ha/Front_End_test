@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSAFY BookCafe</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- 상단 Header -->
+    <header>
+        <nav>
+            <a class ="header-nav-home" href="#">SSAFY BookCafe</a>
+            <a href="#">공지사항</a>
+            <div class="header-nav-menu">
+                <div class="header-nav-comfirm-off">
+                    <div class="header-nav-menu-item"><a href="javascript:login();">로그인</a></div>
+                <div class="header-nav-menu-item"><a href="./register.html">회원가입</a></div>
+                </div>
+                <div class="header-nav-comfirm-on" style="display : none">
+                    <div class="header-nav-menu-item" id="logout"><a href="#">로그아웃</a></div>
+                <div class="header-nav-menu-item"><a href="#">마이페이지</a></div>
+                <div class="header-nav-menu-item" id = "btn-make-poll"><a href="javascript:make_choice();">관리자</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 중앙 Contents -->
+    <div class="content">
+        <!-- 왼쪽 -->
+        <div class="content-left">
+        <!-- 프로필 사진 -->
+        <div class="profile">
+            <img id = "no_img" src="../img/noimg.png" alt="" width="100" style="display: block;"/>
+            <img id = "profile_img" src="../img/profile.png" alt="" width="100" style="display : none"/>
+        </div>
+
+        <!-- 매장 리스트 -->
+        <div class="store-title">
+            <div id="store-display-on"><a href="javascript:Stores1()">전국매장펼치기</a></div>
+            <div id="store-display-off" style="display : none"><a href="javascript:Stores2()">전국매장접기</a></div>
+            <ul class="store-item">
+                <li>
+                    <div class="store-area"><a class="store-area" href="javascript:Store1();">서울</a></div>
+                    <div class="seoul">
+                        <ul>
+                            <li>역삼점</li>
+                            <li>선릉점</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><div class="store-area"><a class="store-area" href="javascript:Store2();">대구</a></div>
+                    <div class="daejeon">
+                        <ul>
+                            <li>학하점</li>
+                            <li>봉명점</li>
+                        </ul>
+                    </div></li>
+                <li><div class="store-area"><a class="store-area" href="javascript:Store3();">구미</a></div>
+                    <div class="gumi">
+                        <ul>
+                            <li>인동점</li>
+                            <li>공단점</li>
+                        </ul>
+                    </div></li>
+                <li><div class="store-area"><a class="store-area" href="javascript:Store4();">광주</a></div>
+                    <div class="gwangju">
+                        <ul>
+                            <li>하남산단점</li>
+                            <li>광주역점</li>
+                        </ul>
+                    </div></li>
+            </ul>
+
+        </div>
+        <!-- 설문조사 -->
+        <div class="vote">
+            <!-- <div class="vote-title">[당신의 선택]</div>
+            <div class="vote-question">공부하고 싶은 분야는?</div>
+            <div class="vote-answer">
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" name="vote-answer" value="Python"/><img src="/src_html&css_배포/poll/python.png" alt="" />Python
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="vote-answer" value="HTML5"/><img src="/src_html&css_배포/poll/html5.png" alt="" />HTML5
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                        <input type="radio" name="vote-answer" value="Vue.js"/><img src="/src_html&css_배포/poll/vuejs.png" alt="" />Vue.js
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                        <input type="radio" name="vote-answer" value="Java"/><img src="/src_html&css_배포/poll/java.png" alt="" />Java
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="vote-botton">
+                <button class="button btn-primary">투표하기</button>
+                <button class="button">결과보기</button>
+            </div>
+            <div class="vote-date">투표기간 : 23.03.10~</div> -->
+        </div>
+    </div> 
+        <!-- 메인 -->
+        <div class="content-main">
+            <section class="menu">
+                <h3>[프로그래밍 언어]</h3>
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="/SSAFY Homework/img/book/p_book01.png" alt="">
+                            </div>
+                            <div class="menu-item-info">Python</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="/SSAFY Homework/img/book/p_book02.png" alt="">
+                            </div>
+                            <div class="menu-item-info">HTML5</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="/SSAFY Homework/img/book/p_book03.png" alt="">
+                            </div>
+                            <div class="menu-item-info">Vue.js</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="/SSAFY Homework/img/book/p_book04.png" alt="">
+                            </div>
+                            <div class="menu-item-info">Java</div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="menu">
+                <h3>[에세이]</h3>
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="/SSAFY Homework/img/book/e_book01.png" alt="">
+                            </div>
+                            <div class="menu-item-info">2인조</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="/SSAFY Homework/img/book/e_book02.png" alt="">
+                            </div>
+                            <div class="menu-item-info">안녕, 소중한 사람</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="/SSAFY Homework/img/book/e_book03.png" alt="">
+                            </div>
+                            <div class="menu-item-info">달을 보듯 너를 본다</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="/SSAFY Homework/img/book/e_book04.png" alt="">
+                            </div>
+                            <div class="menu-item-info">곰돌이 푸</div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="article">
+                <article class="article-popular">
+                    <h3>[인기글]</h3>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="title">제목</th>
+                                <th>작성자</th>
+                                <th>조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>자바공부 쉽게하는법!!</th>
+                                <th>이쎄림</th>
+                                <th>1756</th>
+                            </tr>
+                            <tr>
+                                <th>알고리즘은 자바? 파이썬?</th>
+                                <th>홍정밈</th>
+                                <th>998</th>
+                            </tr>
+                            <tr>
+                                <th>스프링 정복하기~</th>
+                                <th>김나켠</th>
+                                <th>856</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article class="article-new">
+                    <h3>[최신글]</h3>
+                    <table  class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="title">제목</th>
+                                <th>작성자</th>
+                                <th>조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>web 관련 질문있어요</th>
+                                <th>이주녕</th>
+                                <th>12</th>
+                            </tr>
+                            <tr>
+                                <th>vusjs는 이렇게 공부해보세요</th>
+                                <th>조명기</th>
+                                <th>98</th>
+                            </tr>
+                            <tr>
+                                <th>꽃길만 걸어요</th>
+                                <th>홍해연</th>
+                                <th>56</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- 하단 footer -->
+    <footer>
+        <ul>
+            <li><a href="#">카페소개</a></li>
+            <li><a href="#">개인정보처리</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">오시는 길</a></li>
+            <li>&copy; SSAFY Corp.</li>
+        </ul>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
