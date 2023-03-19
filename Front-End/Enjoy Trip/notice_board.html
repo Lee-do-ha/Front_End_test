@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Enjoy Trip!</title>
+        <link rel="shortcut icon" href="./assets/img/travel.jpg" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
+        <script src="./assets/js/key.js"></script>
+        <link href="./assets/css/main.css" rel="stylesheet" type="text/css">
+    
+        </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top" >
+    <div class="container">
+      <a class="navbar-brand text-primary fw-bold" href="triplist.html">
+        <img src="./assets/img/캡처.PNG" alt="" width="60" />
+        Enjoy Trip
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="notice_board.html">공지사항</a>
+          </li>
+        </ul>
+        <!-- 로그인 전 -->
+        <ul class="navbar-nav mb-2 me-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="plantrip.html" id="E" ;>계획 세우기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="plantrip.html" id="E" ;>핫플레이스</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#pollModal2" id="A" style="display: none;">회원가입</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#pollModal1" id="B" style="display: none;">로그인</a>
+          </li>
+        </ul>
+        <!-- 로그인 후 -->
+        <ul class="navbar-nav mb-2 me-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="javaScript:boardlogout();" id="C" style="display: none;">로그아웃</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="mypage.html" id="D" style="display: none;">마이페이지</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="container"> 
+<!-- container는 표를 가운데 정렬하기 위해서 -->
+<table class="table table-hover table" style="margin-top: 150px;"> 
+<!-- table-hover클래스는 마우스를 올리면 회색이 생기게
+table-striped클래스는 홀수번째 테이블에 회색이 생겨있게-->
+<!-- table table-bordered 이 클래스는 테이블의 선 그어주기--> 
+
+    <tr> 
+        <th>번호</th> 
+        <th>제목</th> 
+        <th>작성자</th> 
+        <th>날짜</th> 
+        <th>조회수</th> 
+    </tr> 
+
+    <tr> 
+        <td>1</td> 
+        <td><a href="" style="text-decoration-line: none;">공지사항</a></td> 
+        <td>홍승준</td> 
+        <td>2023.03.10</td> 
+        <td>218</td>
+    </tr> 
+
+
+    <tr> 
+        <td>2</td> 
+        <td><a href="" style="text-decoration-line: none;">공지사항</a></td> 
+        <td>홍승준</td> 
+        <td>2023.03.11</td> 
+        <td>67</td> 
+    </tr> 
+
+
+    <tr> 
+        <td>3</td> 
+        <td><a href="" style="text-decoration-line: none;">공지사항</a></td> 
+        <td>이도하</td> 
+        <td>2023.03.12</td>     
+        <td>5</td> 
+    </tr> 
+
+
+    <tr> 
+        <td>4</td> 
+        <td><a href="" style="text-decoration-line: none;">공지사항</a></td> 
+        <td>이도하</td> 
+        <td>2023.03.13</td> 
+        <td>34</td> 
+        </tr> 
+    </table> 
+
+<a class="btn btn-default pull-right" id="Write">게시물 작성</a> 
+
+<div class="text-center" style="margin-left: 40%;"> 
+    <ul class="pagination">
+<!-- pagination클래스는 번호를 이쁘게 꾸며준다 -->
+        <li class="ms-2"><a href="#">1</a></li> 
+        <li class="ms-2"><a href="#">2</a></li> 
+        <li class="ms-2"><a href="#">3</a></li> 
+        <li class="ms-2"><a href="#">4</a></li> 
+        <li class="ms-2"><a href="#">5</a></li> 
+    </ul> 
+</div> 
+</div> 
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/map.js"></script>
+<script src="./assets/js/notice_board.js"></script>
+</body>
+</html>
