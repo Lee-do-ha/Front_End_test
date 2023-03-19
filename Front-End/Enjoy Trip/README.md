@@ -49,15 +49,6 @@
 
 </br>
 
-2. 공지사항 글쓰기
-   <img width="80%" alt="공지사항 글쓰기" src="https://github.com/Lee-do-ha/Front_End_test/blob/febf2d866e11834594976fa850e1e33ecc96574f/Front-End/Enjoy%20Trip/assets/img/asdasdasdqw.PNG?raw=true">
-   </br>
-   </br>
-
-공지사항의 글쓰기 -> 로그인하지않은상태로는 해당 창에 올 수 없음
-
-</br>
-
 3. 공지사항 글쓰기
    <img width="80%" alt="공지사항 글쓰기" src="https://github.com/Lee-do-ha/Front_End_test/blob/main/Front-End/Enjoy%20Trip/assets/img/asdasdasdqw.PNG?raw=true">
    </br>
