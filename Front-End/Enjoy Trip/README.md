@@ -1,72 +1,119 @@
-# 2023-SSAFY Project 
-# Enjoy trip 홈즈 
+# 2023-SSAFY Project
+
+# Enjoy trip
 
 #### Project member : Lee Do Ha, Hong Seung Jun
 
---------------------------
+---
+
 ## Description
-사용자에게 한국의 다양한 관광지, 먹거리, 축제, 행사 등을 소개하여 지역 관광 활성화를 위한 지역 관광 소개 페이지를 구축하려고 한다. 한국관광공사에서 제공하는 국문관광정보서비스_GW의 다양한 상세기능정보 API를 활용하여 지역별 관광지 data를 분석하고 화면에 표시한다. 또한 여행계획을 위한 스케줄과 여행경로 공유 등 사용자 편의 기능을 구현해 본다. 추가적으로 나만의 숨은 관광지를 소개하는 페이지와 자유롭게 토론이 가능한 게시판 등을 구현해 본다.
+
+사용자에게 한국의 다양한 관광지, 먹거리, 축제, 행사 등을 소개하여 지역 관광 활성화를 위한 지역 관광 소개 페이지를 구축하려고 한다. 한국관광공사에서 제공하는 국문관광정보서비스\_GW의 다양한 상세기능정보 API를 활용하여 지역별 관광지 data를 분석하고 화면에 표시한다. 또한 여행계획을 위한 스케줄과 여행경로 공유 등 사용자 편의 기능을 구현해 본다. 추가적으로 나만의 숨은 관광지를 소개하는 페이지와 자유롭게 토론이 가능한 게시판 등을 구현해 본다.
 
 ## Environment
 
 > html, css, js  
 > VSCODE
-> Windows  
- 
+> Windows
 
-## Manual 
+## Manual
 
 #### 필수 요구 사항
+
 1. 프로젝트 메인 화면
-<img width="80%" alt="main" src="https://user-images.githubusercontent.com/107923409/226160801-6899bbc0-fe2c-4d0b-90ab-35419b7fcc81.png">
+   <img width="80%" alt="main" src="https://user-images.githubusercontent.com/107923409/226160801-6899bbc0-fe2c-4d0b-90ab-35419b7fcc81.png">
+   </br>
+   </br>
+
+메인화면 가운데에 있는 버튼을 누르면 아래의 여행 정보 가져오기 화면이 나온다
+
+</br>
+
+1-1. 여행정보 페이지
+<img width="80%" alt="여행정보가져요기" src="https://user-images.githubusercontent.com/107923409/226161177-9f0318c6-b4dd-4938-a4e9-6148ef72650a.png">
+
+여행정보페이지에 지역, 관광 종류, 키워드를 입력하면 해당하는 장소들이 지도에 마커로 표시된다.
+
+</br>
+
+왼쪽 리스트에는 마커들의 목록이 표시된다.
+
+</br>
+
+2. 공지사항
+   <img width="80%" alt="공지사항" src="https://user-images.githubusercontent.com/107923409/226161205-da6c6429-6811-4bfa-b7f9-e64040cc6aa5.png">
+   </br>
+   </br>
+
+게시판 형식의 공지사항
+
+</br>
+
+2. 공지사항 글쓰기
+   <img width="80%" alt="공지사항 글쓰기" src="https://github.com/Lee-do-ha/Front_End_test/blob/febf2d866e11834594976fa850e1e33ecc96574f/Front-End/Enjoy%20Trip/assets/img/asdasdasdqw.PNG?raw=true">
+   </br>
+   </br>
+
+공지사항의 글쓰기 -> 로그인하지않은상태로는 해당 창에 올 수 없음
+
+</br>
+
+3. 공지사항 글쓰기
+   <img width="80%" alt="공지사항 글쓰기" src="https://github.com/Lee-do-ha/Front_End_test/blob/main/Front-End/Enjoy%20Trip/assets/img/asdasdasdqw.PNG?raw=true">
+   </br>
+   </br>
+
+공지사항의 글쓰기 -> 로그인하지않은상태로는 해당 창에 올 수 없음
+
+</br>
+
+4. 회원가입
+   <img width="80%" alt="회원가입" src="https://user-images.githubusercontent.com/107923409/226161207-45f0880f-8ede-4dfc-9432-84c242325e26.png">
+   </br>
+
+회원가입창
+
 </br>
 </br>
 
-2. 아파트 매매/전월세 , 주택 매매/전월세 별로 선택 후 검색  
-<img width="80%" src="https://user-images.githubusercontent.com/44559332/215703781-acb4e292-810d-4154-82e1-c4b064eb6afe.png"/>
-</br>
+5. 로그인
+   <img width="80%" alt="로그인" src="https://user-images.githubusercontent.com/107923409/226161209-d7f23764-69d6-4dfd-97b6-0d4edfc9d56f.png">
+   </br>
+
+로그인창
+
 </br>
 
-3. 동으로 검색  
-<img width="80%" src="https://user-images.githubusercontent.com/44559332/215703306-c891e033-ccfe-4e9e-9be4-310f87e00f5c.png"/> 
-</br>
-</br>
+6. 마이페이지
+   <img width="80%" alt="마이페이지" src="https://user-images.githubusercontent.com/107923409/226161206-60e3cd49-4485-466f-bbe1-1518c964ab7a.png">
+   </br>
 
-4. 아파트 이름으로 검색  
-<img width="80%" src="https://user-images.githubusercontent.com/44559332/215702986-fc40a4fa-b34a-41c8-94f5-256151de16eb.png"/> 
-</br>
+회원정보 수정, 탈퇴, 비밀번호 변경을 할 수 있다.
+
 </br>
 
-이때, 해당하는 매물의 이미지 값을 띄워준다.  
+7. 계획세우기
+   <img width="80%" alt="계획세우기" src="https://user-images.githubusercontent.com/107923409/226161208-fc63a05f-299e-426c-99d2-b88171866003.png">
+   </br>
 
+키워드를 입력하면 지도에 해당하는 장소들이 마커로 표시된다.
 
-5. 요구하는 코드를 람다식으로 변경 완료!
-
-
-#### 주변 환경 오염 정보 분석
-1. 매물을 선택 한 다음 환경체크 버튼을 클릭시 환경 지도 내역 점검 창이 뜨게된다.  
-<img width="80%" src="https://user-images.githubusercontent.com/44559332/215704252-6f8bb94c-dd71-47dd-8b3a-d6aab109e10c.png"/></br>
-  
-이때, 매물을 선택한다면 법정동 코드 값을 환경 지도 클래스에 넘긴다.
-</br>
 </br>
 
-2. 환경지도 점검 내역 창에서 읽기 버튼을 누르면 넘겨받은 지역코드와 일치하는 환경지도내역 파일을(XML파일) 파싱해 원하는 내역을 보여준다.
-<img width="80%" src="https://user-images.githubusercontent.com/44559332/215705616-36f5d0a2-f277-466a-b81d-5430aab37efd.png"/> 
-</br>
+마커를 클릭할 시 왼쪽 리스트에 추가된다.
+
 </br>
 
+8. 핫플레이스
+   <img width="80%" alt="핫플레이스" src="https://user-images.githubusercontent.com/107923409/226161210-9492d8f4-29a6-4e89-9d61-0a709cc86644.png">
+   </br>
 
-
-#### 주변 상권 정보 분석
-1. 매물을 선택 한 다음 상권 정보 버튼을 클릭시 상권 정보 창이 뜨게된다.  
-   <img width="80%" src="https://user-images.githubusercontent.com/107923409/215762539-30c64f13-0f5e-4a55-ba5d-f63e5551a6ab.png"/>
-</br>
 </br>
 
-2. 상권 정보 창에서 읽기 버튼을 누르게 되면 상권정보 파일에서 해당하는 구의 값만을 읽어와 보여준다.
-   <img width="80%" src="https://user-images.githubusercontent.com/107923409/215761199-3287c206-ba8c-4a65-aec8-2e9dd24e7bc2.png"/>
-</br>
+사용자가 사진이나 여행지의 정보를 입력하고 지도를 클릭하여 마크를 표시한다
+
 </br>
 
-마지막에 타이틀을 조원이름으로 변경!!!! 
+저장 버튼을 누르면 해당하는 장소가 저장되겠지? 나중에?
+
+</br>
